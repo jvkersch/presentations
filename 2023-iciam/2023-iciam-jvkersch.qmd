@@ -1,0 +1,42 @@
+---
+title: "Feedback Integrators for Mechanical Systems with Holonomic Constraints"
+author: Joris Vankerschaver
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    css: style.css
+---
+
+## Introduction
+
+Work done in collaboration with Dong Eui Chang (KAIST) and Matthew Perlmutter (xxx)
+
+## Ghent University Global Campus
+
+quick overview
+
+
+## What are feedback integrators? (Chang et al, 2017)
+
+## What is the Dirac bracket?
+
+
+## Practical advantages
+
+Is it more accurate than a custom integrator? **No**
+
+Is it more versatile than any specific integrator? **Yes**
+
+
+straightforward modification of force field
+
+
+
+
+## Thank you
+
+Summarize key points
+
+
+Add reference
