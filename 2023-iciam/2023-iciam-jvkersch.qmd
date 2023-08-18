@@ -6,11 +6,15 @@ format:
     theme: [default, custom.scss]
     slide-number: true
     css: style.css
+filters:
+  - shinylive      
 ---
 
 ## Introduction
 
 Work done in collaboration with Dong Eui Chang (KAIST) and Matthew Perlmutter (xxx)
+
+
 
 ## Ghent University Global Campus
 
@@ -31,6 +35,17 @@ Is it more versatile than any specific integrator? **Yes**
 
 straightforward modification of force field
 
+
+##
+
+```{python}
+#| echo: false
+#| output: asis
+
+from helpers import include_shiny_folder
+include_shiny_folder("feedback-integrators")
+    
+```
 
 
 
