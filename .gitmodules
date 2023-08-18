@@ -1,0 +1,3 @@
+[submodule "2023-iciam/feedback-integrators"]
+	path = 2023-iciam/feedback-integrators
+	url = git@github.com:jvkersch/feedback-integrators.git
