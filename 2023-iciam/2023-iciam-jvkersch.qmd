@@ -12,13 +12,21 @@ filters:
 
 ## Introduction
 
-Work done in collaboration with Dong Eui Chang (KAIST) and Matthew Perlmutter (xxx)
+Work done in collaboration with **Dong Eui Chang** (KAIST, Korea) and **Matthew Perlmutter** (Universidade Federal de Minas Gerais, Brazil)
 
+![](./images/dongandmatt.png){fig-align=center}
+
+Published as *Feedback Integrators for Mechanical Systems with Holonomic Constraints*, D. E. Chang, M. Perlmutter, J. Vankerschaver. Sensors 22, no. 17 (2022).
 
 
 ## Ghent University Global Campus
 
-quick overview
+- Located in Incheon, at the heart of the Songdo bio cluster
+- Campus of Ghent University (Belgium) focused on life sciences
+- 15-20 faculty, 40-50 PhD students, 400-500 students
+
+![](./images/campus.png){fig-align="center"}
+
 
 
 ## What are feedback integrators? (Chang et al, 2017)
