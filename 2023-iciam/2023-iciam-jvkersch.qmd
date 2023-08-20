@@ -33,7 +33,7 @@ Published as *Feedback Integrators for Mechanical Systems with Holonomic Constra
 Ingredients:
 
 - Dynamical system $\dot{x} = X(x)$
-- Constraint $V(x(t)) = 0$
+- Conserved quantity $V(x(t)) = 0$
 
 **Problem**: Numerical dynamics will drift away from $V^{-1}(0)$.
 
@@ -59,10 +59,87 @@ Now, use *any standard integrator* to numerically integrate the modified vector 
 
 *figure of restored dynamics here*
 
-## What is the Dirac bracket?
+## Example: the mathematical pendulum
+
+- Conserved quantity:
+$$
+    V = \frac{1}{2} \Big(H(q, p) - H(q_0, p_0)\Big)^2
+$$
+with $H(q, p) = \frac{1}{2} p^2 - \cos(q)$ the Hamiltonian.
 
 
-## Practical advantages
+- Dynamics:
+
+\begin{align*}
+    \dot{q} & = \Big(p - \alpha \Delta H \sin(q) \Big) \\
+    \dot{p} & = \Big(- \sin(q) - \alpha \Delta H p \Big).
+\end{align*}
+
+## 
+
+```{python}
+#| echo: false
+#| fig-align: center
+%run scripts/example.py
+
+```
+
+- Feedback Euler is comparable to Stormer-Verlet
+- Other integrators can be slotted in as desired, without any changes to the dynamics.
+
+
+## What about constrained dynamics?
+
+Suppose that we have $2k$ holonomic constraints $f_j(x) = 0$.
+
+- The Hamiltonian flow $X_H$ will in general not leave the constraint surface invariant.
+- Dirac showed us how to modify the dynamics so that the constraints are preserved.
+
+![](./images/constraint-projection.png){width=400}
+![](./images/annotated-dirac.png){fig-align=center height=150}
+
+## Applying the feedback method to constrained dynamics
+
+- The continuous dynamics leaves the constraints invariant.
+- Numerically, the dynamics will drift off the constraint surface.
+
+Add **feedback forces** to attract the dynamics back to the constraint surface:
+
+
+![](./images/annotated-feedback-dirac.png){fig-align=center height=150}
+
+
+## Example: the spherical pendulum
+
+![](./images/annotated-eom.png)
+
+4 conserved quantities to consider:
+
+- Constraints: unit length ($k_1$) and velocity tangent to sphere ($k_2$)
+- Conservation of energy ($k_3$) and angular momentum ($k_4$)
+
+Just a big vector field...
+
+## Feedback Euler captures pendulum dynamics
+
+![](./images/threeD.png)
+
+## Feedback Euler approximately preserves constraints
+
+![](./images/error-f1.png) 
+
+## Feedback Euler approximately preserves energy
+
+![](./images/error-H.png)
+
+## Budget
+
+![](./images/error-vs-budget.png)
+
+
+## Take-away messages
+
+- The feedback methos
 
 Is it more accurate than a custom integrator? **No**
 
