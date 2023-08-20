@@ -118,34 +118,38 @@ Add **feedback forces** to attract the dynamics back to the constraint surface:
 
 Just a big vector field...
 
+
 ## Feedback Euler captures pendulum dynamics
 
 ![](./images/threeD.png)
+
 
 ## Feedback Euler approximately preserves constraints
 
 ![](./images/error-f1.png) 
 
+
 ## Feedback Euler approximately preserves energy
 
 ![](./images/error-H.png)
 
-## Budget
 
-![](./images/error-vs-budget.png)
+## Feedback integrators are more efficient than constraint-implicit methods
 
+![](./images/error-vs-budget.png){fig-align=center height=350}
 
-## Take-away messages
-
-- The feedback methos
-
-Is it more accurate than a custom integrator? **No**
-
-Is it more versatile than any specific integrator? **Yes**
+- RATTLE requires solving a constraint equation at each step
+- Feedback methods achieve a smaller error given the same computational budget
 
 
-straightforward modification of force field
+## How to implement a feedback integrator?
 
+1. Derive expression for vector field using auto-differentiation
+2. Choose an appropriate integrator
+
+Done!
+
+Need a higher-order method? Just choose a higher-order integrator.
 
 ##
 
@@ -159,10 +163,14 @@ include_shiny_folder("feedback-integrators")
 ```
 
 
-
 ## Thank you
 
-Summarize key points
 
+Take-aways from this talk:
 
-Add reference
+1. Feedback integrators sacrifice accuracy for versatility
+2. Feedback integrators can be implemented in a straightforward way
+
+Future work:
+
+1. Apply feedback integrators in situations where near-preservation is good enough (e.g. neural networks with Stiefel weights)
