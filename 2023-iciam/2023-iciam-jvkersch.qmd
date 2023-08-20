@@ -41,6 +41,7 @@ Ingredients:
 
 ![](./images/unconstrained.svg){fig-align=center height=150}
 
+
 ## How are feedback integrators implemented?
 
 ![](./images/restoring-vector-field.png){.absolute top=130 right=0}
@@ -57,23 +58,22 @@ Under modest assumptions,
 Now, use **any standard integrator** to numerically integrate the modified vector field.
 
 
-## Example: the mathematical pendulum
+## Example: feedback equations for the simple pendulum
 
-- Conserved quantity:
+![](./images/pendulum.png){.absolute top=120 right=0 height=60%}
+
+Conserved quantity:
 $$
     V = \frac{1}{2} \Big(H(q, p) - H(q_0, p_0)\Big)^2
 $$
 with $H(q, p) = \frac{1}{2} p^2 - \cos(q)$ the Hamiltonian.
 
 
-- Dynamics:
+Feedback dynamics:
 
-\begin{align*}
-    \dot{q} & = \Big(p - \alpha \Delta H \sin(q) \Big) \\
-    \dot{p} & = \Big(- \sin(q) - \alpha \Delta H p \Big).
-\end{align*}
+![](./images/annotated-pendulum.svg){fig-align=center}
 
-## 
+## Integrating the feedback equations
 
 ```{python}
 #| echo: false
@@ -82,8 +82,8 @@ with $H(q, p) = \frac{1}{2} p^2 - \cos(q)$ the Hamiltonian.
 
 ```
 
-- Feedback Euler is comparable to Stormer-Verlet
-- Other integrators can be slotted in as desired, without any changes to the dynamics.
+Feedback Euler = forward Euler applied to feedback equations. Comparable behavior to Stormer-Verlet.
+
 
 
 ## What about constrained dynamics?
