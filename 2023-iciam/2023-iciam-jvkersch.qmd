@@ -39,25 +39,23 @@ Ingredients:
 
 **Feedback approach**: Make $V^{-1}(0)$ into an **attracting** invariant manifold (approximately conserved).
 
-
-*figure of dynamics moving off submanifold here*
+![](./images/unconstrained.svg){fig-align=center height=150}
 
 ## How are feedback integrators implemented?
 
+![](./images/restoring-vector-field.png){.absolute top=130 right=0}
+
 Add **restoring force** and consider
-$$
-    \dot{x} = X(x) - \alpha \nabla V(x).
-$$
+
+![](./images/annotated-feedback.png)
 
 Under modest assumptions,
 
 - $\nabla V(x)$ pulls dynamics back to $V^{-1}(0)$
 - Dynamics on $V^{-1}(0)$ are not changed
 
-Now, use *any standard integrator* to numerically integrate the modified vector field.
+Now, use **any standard integrator** to numerically integrate the modified vector field.
 
-
-*figure of restored dynamics here*
 
 ## Example: the mathematical pendulum
 
