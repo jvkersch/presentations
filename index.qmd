@@ -1,0 +1,8 @@
+---
+title: Conference presentations
+author: Joris Vankerschaver
+---
+
+## Presentations
+
+- [ICIAM 2023](2023-iciam/2023-iciam-jvkersch.qmd)
