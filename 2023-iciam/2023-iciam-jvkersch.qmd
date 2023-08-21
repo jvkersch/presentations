@@ -1,11 +1,15 @@
 ---
 title: "Feedback Integrators for Mechanical Systems with Holonomic Constraints"
-author: Joris Vankerschaver
+author: Joris Vankerschaver (Ghent University Global Campus, South Korea)
 format:
   revealjs:
     theme: [default, custom.scss]
     slide-number: true
     css: style.css
+title-slide-attributes: 
+  data-background-image: ./images/logos.png
+  data-background-size: 25%
+  data-background-position: 50% 90%
 filters:
   - shinylive      
 ---
@@ -14,7 +18,7 @@ filters:
 
 Work done in collaboration with **Dong Eui Chang** (KAIST, Korea) and **Matthew Perlmutter** (Universidade Federal de Minas Gerais, Brazil)
 
-![](./images/dongandmatt.png){fig-align=center}
+![](./images/dongandmatt.png){fig-align=center height=200}
 
 Published as *Feedback Integrators for Mechanical Systems with Holonomic Constraints*, D. E. Chang, M. Perlmutter, J. Vankerschaver. Sensors 22, no. 17 (2022).
 
@@ -52,7 +56,7 @@ Add **restoring force** and consider
 
 Under modest assumptions,
 
-- $\nabla V(x)$ pulls dynamics back to $V^{-1}(0)$
+- $- \nabla V(x)$ pulls dynamics back to $V^{-1}(0)$
 - Dynamics on $V^{-1}(0)$ are not changed
 
 Now, use **any standard integrator** to numerically integrate the modified vector field.
