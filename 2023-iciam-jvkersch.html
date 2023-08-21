@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<meta name="shinylive:serviceworker_dir" content="..">
-<script src="../site_libs/quarto-contrib/shinylive-0.1.5/shinylive/load-shinylive-sw.js" type="module"></script>
-<script src="../site_libs/quarto-contrib/shinylive-0.1.5/shinylive/run-python-blocks.js" type="module"></script>
-<link href="../site_libs/quarto-contrib/shinylive-0.1.5/shinylive/shinylive.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet"><meta charset="utf-8">
+<script src="2023-iciam-jvkersch_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2023-iciam-jvkersch_files/libs/quarto-html/tabby.min.js"></script>
+<script src="2023-iciam-jvkersch_files/libs/quarto-html/popper.min.js"></script>
+<script src="2023-iciam-jvkersch_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="2023-iciam-jvkersch_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2023-iciam-jvkersch_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="2023-iciam-jvkersch_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="2023-iciam-jvkersch_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="2023-iciam-jvkersch_files/libs/quarto-contrib/shinylive-0.1.5/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="2023-iciam-jvkersch_files/libs/quarto-contrib/shinylive-0.1.5/shinylive/run-python-blocks.js" type="module"></script>
+<link href="2023-iciam-jvkersch_files/libs/quarto-contrib/shinylive-0.1.5/shinylive/shinylive.css" rel="stylesheet">
+<link href="2023-iciam-jvkersch_files/libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
-  <meta name="author" content="Joris Vankerschaver">
+  <meta name="author" content="Joris Vankerschaver (Ghent University Global Campus, South Korea)">
   <title>Feedback Integrators for Mechanical Systems with Holonomic Constraints</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="2023-iciam-jvkersch_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="2023-iciam-jvkersch_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -100,12 +100,12 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="2023-iciam-jvkersch_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="style.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="2023-iciam-jvkersch_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="2023-iciam-jvkersch_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="2023-iciam-jvkersch_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="2023-iciam-jvkersch_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -395,13 +395,13 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="./images/logos.png" data-background-position="50% 90%" data-background-size="25%" class="quarto-title-block center">
   <h1 class="title">Feedback Integrators for Mechanical Systems with Holonomic Constraints</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Joris Vankerschaver 
+Joris Vankerschaver (Ghent University Global Campus, South Korea) 
 </div>
 </div>
 </div>
@@ -410,8 +410,12 @@ Joris Vankerschaver
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <p>Work done in collaboration with <strong>Dong Eui Chang</strong> (KAIST, Korea) and <strong>Matthew Perlmutter</strong> (Universidade Federal de Minas Gerais, Brazil)</p>
-
-<img data-src="./images/dongandmatt.png" class="r-stretch quarto-figure-center"><p>Published as <em>Feedback Integrators for Mechanical Systems with Holonomic Constraints</em>, D. E. Chang, M. Perlmutter, J. Vankerschaver. Sensors 22, no. 17 (2022).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./images/dongandmatt.png" height="200"></p>
+</figure>
+</div>
+<p>Published as <em>Feedback Integrators for Mechanical Systems with Holonomic Constraints</em>, D. E. Chang, M. Perlmutter, J. Vankerschaver. Sensors 22, no. 17 (2022).</p>
 </section>
 <section id="ghent-university-global-campus" class="slide level2">
 <h2>Ghent University Global Campus</h2>
@@ -444,7 +448,7 @@ Joris Vankerschaver
 <p><img data-src="./images/annotated-feedback.png"></p>
 <p>Under modest assumptions,</p>
 <ul>
-<li><span class="math inline">\(\nabla V(x)\)</span> pulls dynamics back to <span class="math inline">\(V^{-1}(0)\)</span></li>
+<li><span class="math inline">\(- \nabla V(x)\)</span> pulls dynamics back to <span class="math inline">\(V^{-1}(0)\)</span></li>
 <li>Dynamics on <span class="math inline">\(V^{-1}(0)\)</span> are not changed</li>
 </ul>
 <p>Now, use <strong>any standard integrator</strong> to numerically integrate the modified vector field.</p>
@@ -553,240 +557,252 @@ Joris Vankerschaver
 <span id="cb1-9"><a href="#cb1-9"></a>from scipy.integrate import solve_ivp</span>
 <span id="cb1-10"><a href="#cb1-10"></a>from symbolic import q, p, derived_C, X_full_feedback, to_function</span>
 <span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a># TODO hardcoded</span>
-<span id="cb1-13"><a href="#cb1-13"></a>q0 = (0, 2**0.5/2, 2**0.5/2)</span>
-<span id="cb1-14"><a href="#cb1-14"></a>p0 = (1, -3, 3)</span>
-<span id="cb1-15"><a href="#cb1-15"></a></span>
-<span id="cb1-16"><a href="#cb1-16"></a></span>
-<span id="cb1-17"><a href="#cb1-17"></a>app_ui = ui.page_fluid(</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    ui.panel_title(</span>
-<span id="cb1-19"><a href="#cb1-19"></a>        ui.h2("Feedback integrator playground"),</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    ),</span>
-<span id="cb1-21"><a href="#cb1-21"></a>    ui.layout_sidebar(</span>
-<span id="cb1-22"><a href="#cb1-22"></a>        ui.panel_sidebar(</span>
-<span id="cb1-23"><a href="#cb1-23"></a>            ui.input_text("H", "Hamiltonian", value="(px**2 + py**2 + pz**2)/2"),</span>
-<span id="cb1-24"><a href="#cb1-24"></a>            ui.input_text("C1", "Constraint", value="x**2 + y**2 + z**2 - 1"),</span>
-<span id="cb1-25"><a href="#cb1-25"></a>            ui.input_slider("k", "Feedback gain", value=50, min=0, max=100),</span>
-<span id="cb1-26"><a href="#cb1-26"></a>        ),</span>
-<span id="cb1-27"><a href="#cb1-27"></a>        ui.panel_main(</span>
-<span id="cb1-28"><a href="#cb1-28"></a>            ui.navset_tab(</span>
-<span id="cb1-29"><a href="#cb1-29"></a>                ui.nav(</span>
-<span id="cb1-30"><a href="#cb1-30"></a>                    "Plots",</span>
-<span id="cb1-31"><a href="#cb1-31"></a>                    ui.output_plot("conservation_laws_plot"),</span>
-<span id="cb1-32"><a href="#cb1-32"></a>                ),</span>
-<span id="cb1-33"><a href="#cb1-33"></a>                ui.nav(</span>
-<span id="cb1-34"><a href="#cb1-34"></a>                    "Vector fields",</span>
-<span id="cb1-35"><a href="#cb1-35"></a>                    ui.output_text("vector_field"),</span>
-<span id="cb1-36"><a href="#cb1-36"></a>                ),</span>
-<span id="cb1-37"><a href="#cb1-37"></a>                ui.nav(</span>
-<span id="cb1-38"><a href="#cb1-38"></a>                    "Solver diagnostics",</span>
-<span id="cb1-39"><a href="#cb1-39"></a>                    ui.output_text("diagnostics"),   </span>
-<span id="cb1-40"><a href="#cb1-40"></a>                ),</span>
-<span id="cb1-41"><a href="#cb1-41"></a>            ),</span>
-<span id="cb1-42"><a href="#cb1-42"></a>        ),</span>
-<span id="cb1-43"><a href="#cb1-43"></a>    ),</span>
-<span id="cb1-44"><a href="#cb1-44"></a>)</span>
-<span id="cb1-45"><a href="#cb1-45"></a></span>
-<span id="cb1-46"><a href="#cb1-46"></a></span>
-<span id="cb1-47"><a href="#cb1-47"></a>def server(input, output, session):</span>
-<span id="cb1-48"><a href="#cb1-48"></a></span>
-<span id="cb1-49"><a href="#cb1-49"></a>    @reactive.Calc</span>
-<span id="cb1-50"><a href="#cb1-50"></a>    def run_solver():</span>
-<span id="cb1-51"><a href="#cb1-51"></a>        H = sp.sympify(input.H())</span>
-<span id="cb1-52"><a href="#cb1-52"></a>        C1 = sp.sympify(input.C1())</span>
-<span id="cb1-53"><a href="#cb1-53"></a>        C2 = derived_C(H, input.C1())</span>
-<span id="cb1-54"><a href="#cb1-54"></a>        k = input.k()</span>
-<span id="cb1-55"><a href="#cb1-55"></a>        Xff = to_function(X_full_feedback(H, C1, C2, k, k, k, q0, p0))</span>
-<span id="cb1-56"><a href="#cb1-56"></a></span>
-<span id="cb1-57"><a href="#cb1-57"></a>        t_eval = np.linspace(0, 10, 100)</span>
-<span id="cb1-58"><a href="#cb1-58"></a>        result = solve_ivp(lambda t, y: Xff(y), [0, 10], q0 + p0, t_eval=t_eval)</span>
-<span id="cb1-59"><a href="#cb1-59"></a>        return result</span>
+<span id="cb1-12"><a href="#cb1-12"></a>METHODS = ["RK45", "RK23", "DOP853", "Radau", "BDF", "LSODA"]</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a># TODO hardcoded</span>
+<span id="cb1-15"><a href="#cb1-15"></a>q0 = (0, 2**0.5/2, 2**0.5/2)</span>
+<span id="cb1-16"><a href="#cb1-16"></a>p0 = (1, -3, 3)</span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a>app_ui = ui.page_fluid(</span>
+<span id="cb1-20"><a href="#cb1-20"></a>    ui.panel_title(</span>
+<span id="cb1-21"><a href="#cb1-21"></a>        ui.h2("Feedback integrator playground"),</span>
+<span id="cb1-22"><a href="#cb1-22"></a>    ),</span>
+<span id="cb1-23"><a href="#cb1-23"></a>    ui.layout_sidebar(</span>
+<span id="cb1-24"><a href="#cb1-24"></a>        ui.panel_sidebar(</span>
+<span id="cb1-25"><a href="#cb1-25"></a>            ui.input_text("H", "Hamiltonian", value="(px**2 + py**2 + pz**2)/2"),</span>
+<span id="cb1-26"><a href="#cb1-26"></a>            ui.input_text("C1", "Constraint", value="x**2 + y**2 + z**2 - 1"),</span>
+<span id="cb1-27"><a href="#cb1-27"></a>            ui.input_slider("k1", "Feedback gain (Energy)", value=50, min=0, max=100),</span>
+<span id="cb1-28"><a href="#cb1-28"></a>            ui.input_slider("k2", "Feedback gain (Constraint 1)", value=50, min=0, max=100),</span>
+<span id="cb1-29"><a href="#cb1-29"></a>            ui.input_slider("k3", "Feedback gain (Constraint 2)", value=50, min=0, max=100),</span>
+<span id="cb1-30"><a href="#cb1-30"></a>            ui.input_select("method", "Integration method", METHODS),</span>
+<span id="cb1-31"><a href="#cb1-31"></a>        ),</span>
+<span id="cb1-32"><a href="#cb1-32"></a>        ui.panel_main(</span>
+<span id="cb1-33"><a href="#cb1-33"></a>            ui.navset_tab(</span>
+<span id="cb1-34"><a href="#cb1-34"></a>                ui.nav(</span>
+<span id="cb1-35"><a href="#cb1-35"></a>                    "Plots",</span>
+<span id="cb1-36"><a href="#cb1-36"></a>                    ui.output_plot("conservation_laws_plot"),</span>
+<span id="cb1-37"><a href="#cb1-37"></a>                ),</span>
+<span id="cb1-38"><a href="#cb1-38"></a>                ui.nav(</span>
+<span id="cb1-39"><a href="#cb1-39"></a>                    "Vector fields",</span>
+<span id="cb1-40"><a href="#cb1-40"></a>                    ui.output_text("vector_field"),</span>
+<span id="cb1-41"><a href="#cb1-41"></a>                ),</span>
+<span id="cb1-42"><a href="#cb1-42"></a>                ui.nav(</span>
+<span id="cb1-43"><a href="#cb1-43"></a>                    "Solver diagnostics",</span>
+<span id="cb1-44"><a href="#cb1-44"></a>                    ui.output_text("diagnostics"),   </span>
+<span id="cb1-45"><a href="#cb1-45"></a>                ),</span>
+<span id="cb1-46"><a href="#cb1-46"></a>            ),</span>
+<span id="cb1-47"><a href="#cb1-47"></a>        ),</span>
+<span id="cb1-48"><a href="#cb1-48"></a>    ),</span>
+<span id="cb1-49"><a href="#cb1-49"></a>)</span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a></span>
+<span id="cb1-52"><a href="#cb1-52"></a>def server(input, output, session):</span>
+<span id="cb1-53"><a href="#cb1-53"></a></span>
+<span id="cb1-54"><a href="#cb1-54"></a>    @reactive.Calc</span>
+<span id="cb1-55"><a href="#cb1-55"></a>    def run_solver():</span>
+<span id="cb1-56"><a href="#cb1-56"></a>        H = sp.sympify(input.H())</span>
+<span id="cb1-57"><a href="#cb1-57"></a>        C1 = sp.sympify(input.C1())</span>
+<span id="cb1-58"><a href="#cb1-58"></a>        C2 = derived_C(H, input.C1())</span>
+<span id="cb1-59"><a href="#cb1-59"></a>        Xff = to_function(X_full_feedback(H, C1, C2, input.k1(), input.k2(), input.k3(), q0, p0))</span>
 <span id="cb1-60"><a href="#cb1-60"></a></span>
-<span id="cb1-61"><a href="#cb1-61"></a>    @output</span>
-<span id="cb1-62"><a href="#cb1-62"></a>    @render.text</span>
-<span id="cb1-63"><a href="#cb1-63"></a>    def vector_field():</span>
-<span id="cb1-64"><a href="#cb1-64"></a>        H = sp.sympify(input.H())</span>
-<span id="cb1-65"><a href="#cb1-65"></a>        C1 = sp.sympify(input.C1())</span>
-<span id="cb1-66"><a href="#cb1-66"></a>        C2 = derived_C(H, input.C1())</span>
-<span id="cb1-67"><a href="#cb1-67"></a>        k = input.k()</span>
-<span id="cb1-68"><a href="#cb1-68"></a></span>
-<span id="cb1-69"><a href="#cb1-69"></a>        X = X_full_feedback(H, C1, C2, k, k, k, q0, p0)</span>
-<span id="cb1-70"><a href="#cb1-70"></a>        return f"{X}"</span>
+<span id="cb1-61"><a href="#cb1-61"></a>        t_eval = np.linspace(0, 10, 100)</span>
+<span id="cb1-62"><a href="#cb1-62"></a>        result = solve_ivp(lambda t, y: Xff(y), [0, 10], q0 + p0, t_eval=t_eval, method=input.method())</span>
+<span id="cb1-63"><a href="#cb1-63"></a>        return result</span>
+<span id="cb1-64"><a href="#cb1-64"></a></span>
+<span id="cb1-65"><a href="#cb1-65"></a>    @output</span>
+<span id="cb1-66"><a href="#cb1-66"></a>    @render.text</span>
+<span id="cb1-67"><a href="#cb1-67"></a>    def vector_field():</span>
+<span id="cb1-68"><a href="#cb1-68"></a>        H = sp.sympify(input.H())</span>
+<span id="cb1-69"><a href="#cb1-69"></a>        C1 = sp.sympify(input.C1())</span>
+<span id="cb1-70"><a href="#cb1-70"></a>        C2 = derived_C(H, input.C1())</span>
 <span id="cb1-71"><a href="#cb1-71"></a></span>
-<span id="cb1-72"><a href="#cb1-72"></a>    @output</span>
-<span id="cb1-73"><a href="#cb1-73"></a>    @render.plot</span>
-<span id="cb1-74"><a href="#cb1-74"></a>    def conservation_laws_plot():</span>
-<span id="cb1-75"><a href="#cb1-75"></a>        result = run_solver()</span>
-<span id="cb1-76"><a href="#cb1-76"></a></span>
-<span id="cb1-77"><a href="#cb1-77"></a>        h_fun = sp.lambdify([q + p], input.H())</span>
-<span id="cb1-78"><a href="#cb1-78"></a>        C1_fun = sp.lambdify([q + p], input.C1())</span>
+<span id="cb1-72"><a href="#cb1-72"></a>        X = X_full_feedback(H, C1, C2, input.k1(), input.k2(), input.k3(), q0, p0)</span>
+<span id="cb1-73"><a href="#cb1-73"></a>        return f"{X}"</span>
+<span id="cb1-74"><a href="#cb1-74"></a></span>
+<span id="cb1-75"><a href="#cb1-75"></a>    @output</span>
+<span id="cb1-76"><a href="#cb1-76"></a>    @render.plot</span>
+<span id="cb1-77"><a href="#cb1-77"></a>    def conservation_laws_plot():</span>
+<span id="cb1-78"><a href="#cb1-78"></a>        result = run_solver()</span>
 <span id="cb1-79"><a href="#cb1-79"></a></span>
-<span id="cb1-80"><a href="#cb1-80"></a>        C2 = derived_C(input.H(), input.C1())</span>
-<span id="cb1-81"><a href="#cb1-81"></a>        C2_fun = sp.lambdify([q + p], C2)</span>
-<span id="cb1-82"><a href="#cb1-82"></a>        h_data = np.array([h_fun(pt) for pt in result.y.T])</span>
-<span id="cb1-83"><a href="#cb1-83"></a>        h_data -= h_data[0]</span>
-<span id="cb1-84"><a href="#cb1-84"></a></span>
-<span id="cb1-85"><a href="#cb1-85"></a>        c1_data = np.array([C1_fun(pt) for pt in result.y.T])</span>
-<span id="cb1-86"><a href="#cb1-86"></a>        c2_data = np.array([C2_fun(pt) for pt in result.y.T])</span>
+<span id="cb1-80"><a href="#cb1-80"></a>        h_fun = sp.lambdify([q + p], input.H())</span>
+<span id="cb1-81"><a href="#cb1-81"></a>        C1_fun = sp.lambdify([q + p], input.C1())</span>
+<span id="cb1-82"><a href="#cb1-82"></a></span>
+<span id="cb1-83"><a href="#cb1-83"></a>        C2 = derived_C(input.H(), input.C1())</span>
+<span id="cb1-84"><a href="#cb1-84"></a>        C2_fun = sp.lambdify([q + p], C2)</span>
+<span id="cb1-85"><a href="#cb1-85"></a>        h_data = np.array([h_fun(pt) for pt in result.y.T])</span>
+<span id="cb1-86"><a href="#cb1-86"></a>        h_data -= h_data[0]</span>
 <span id="cb1-87"><a href="#cb1-87"></a></span>
-<span id="cb1-88"><a href="#cb1-88"></a>        fig, (ax_h, ax_c1, ax_c2) = plt.subplots(ncols=3)</span>
-<span id="cb1-89"><a href="#cb1-89"></a>        ax_h.plot(result.t, h_data)</span>
-<span id="cb1-90"><a href="#cb1-90"></a>        ax_c1.plot(result.t, c1_data)</span>
-<span id="cb1-91"><a href="#cb1-91"></a>        ax_c2.plot(result.t, c2_data)</span>
-<span id="cb1-92"><a href="#cb1-92"></a></span>
-<span id="cb1-93"><a href="#cb1-93"></a>        return fig</span>
-<span id="cb1-94"><a href="#cb1-94"></a></span>
-<span id="cb1-95"><a href="#cb1-95"></a>    @output</span>
-<span id="cb1-96"><a href="#cb1-96"></a>    @render.text</span>
-<span id="cb1-97"><a href="#cb1-97"></a>    def diagnostics():</span>
-<span id="cb1-98"><a href="#cb1-98"></a>        return f"Function evaluations: {run_solver().nfev}"</span>
-<span id="cb1-99"><a href="#cb1-99"></a></span>
-<span id="cb1-100"><a href="#cb1-100"></a></span>
-<span id="cb1-101"><a href="#cb1-101"></a>app = App(app_ui, server)</span>
-<span id="cb1-102"><a href="#cb1-102"></a></span>
-<span id="cb1-103"><a href="#cb1-103"></a></span>
-<span id="cb1-104"><a href="#cb1-104"></a>## file: test_symbolic.py</span>
-<span id="cb1-105"><a href="#cb1-105"></a>import pytest</span>
-<span id="cb1-106"><a href="#cb1-106"></a>import sympy as sp</span>
-<span id="cb1-107"><a href="#cb1-107"></a></span>
-<span id="cb1-108"><a href="#cb1-108"></a>from symbolic import delta, dot, X_full, derived_C, to_function, eval_at</span>
-<span id="cb1-109"><a href="#cb1-109"></a></span>
-<span id="cb1-110"><a href="#cb1-110"></a></span>
-<span id="cb1-111"><a href="#cb1-111"></a>def test_conservation():</span>
-<span id="cb1-112"><a href="#cb1-112"></a>    H = sp.sympify("(px^2 + py^2 + pz^2)/2 + (x^2 + y^2 + z^2)/2")</span>
-<span id="cb1-113"><a href="#cb1-113"></a>    C1 = sp.sympify("x^2 + y^2 + z^2 - 1")</span>
-<span id="cb1-114"><a href="#cb1-114"></a>    C2 = derived_C(H, C1)</span>
+<span id="cb1-88"><a href="#cb1-88"></a>        c1_data = np.array([C1_fun(pt) for pt in result.y.T])</span>
+<span id="cb1-89"><a href="#cb1-89"></a>        c2_data = np.array([C2_fun(pt) for pt in result.y.T])</span>
+<span id="cb1-90"><a href="#cb1-90"></a></span>
+<span id="cb1-91"><a href="#cb1-91"></a>        fig, axes = plt.subplot_mosaic([["A", "A", "A"],</span>
+<span id="cb1-92"><a href="#cb1-92"></a>                                        ["B", "C", "D"]])</span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a>        axes["A"].plot(result.t, result.y[0])</span>
+<span id="cb1-95"><a href="#cb1-95"></a>        axes["A"].plot(result.t, result.y[1])</span>
+<span id="cb1-96"><a href="#cb1-96"></a>        axes["A"].plot(result.t, result.y[2])</span>
+<span id="cb1-97"><a href="#cb1-97"></a>        axes["A"].set_title("Trajectory")</span>
+<span id="cb1-98"><a href="#cb1-98"></a>        axes["B"].plot(result.t, h_data)</span>
+<span id="cb1-99"><a href="#cb1-99"></a>        axes["B"].set_title("Energy Error")</span>
+<span id="cb1-100"><a href="#cb1-100"></a>        axes["C"].plot(result.t, c1_data)</span>
+<span id="cb1-101"><a href="#cb1-101"></a>        axes["C"].set_title("Constraint 1 Error")</span>
+<span id="cb1-102"><a href="#cb1-102"></a>        axes["D"].plot(result.t, c2_data)</span>
+<span id="cb1-103"><a href="#cb1-103"></a>        axes["D"].set_title("Constraint 2 Error")</span>
+<span id="cb1-104"><a href="#cb1-104"></a></span>
+<span id="cb1-105"><a href="#cb1-105"></a>        return fig</span>
+<span id="cb1-106"><a href="#cb1-106"></a></span>
+<span id="cb1-107"><a href="#cb1-107"></a>    @output</span>
+<span id="cb1-108"><a href="#cb1-108"></a>    @render.text</span>
+<span id="cb1-109"><a href="#cb1-109"></a>    def diagnostics():</span>
+<span id="cb1-110"><a href="#cb1-110"></a>        return f"Function evaluations: {run_solver().nfev}"</span>
+<span id="cb1-111"><a href="#cb1-111"></a></span>
+<span id="cb1-112"><a href="#cb1-112"></a></span>
+<span id="cb1-113"><a href="#cb1-113"></a>app = App(app_ui, server)</span>
+<span id="cb1-114"><a href="#cb1-114"></a></span>
 <span id="cb1-115"><a href="#cb1-115"></a></span>
-<span id="cb1-116"><a href="#cb1-116"></a>    X = X_full(H, C1, C2)</span>
-<span id="cb1-117"><a href="#cb1-117"></a></span>
-<span id="cb1-118"><a href="#cb1-118"></a>    assert sp.simplify(dot(X, delta(H))) == 0</span>
-<span id="cb1-119"><a href="#cb1-119"></a>    assert sp.simplify(dot(X, delta(C1))) == 0</span>
-<span id="cb1-120"><a href="#cb1-120"></a></span>
-<span id="cb1-121"><a href="#cb1-121"></a>    # Checking the conservation of C2 requires using the constraints</span>
-<span id="cb1-122"><a href="#cb1-122"></a>    # themselves. I don't know how to do that, so we fall back on just</span>
-<span id="cb1-123"><a href="#cb1-123"></a>    # substituting a point on the constraint surface and verifying that we get</span>
-<span id="cb1-124"><a href="#cb1-124"></a>    # 0.</span>
-<span id="cb1-125"><a href="#cb1-125"></a>    pt = (0, sp.sqrt(2)/2, sp.sqrt(2)/2, 5, -3, 3)</span>
-<span id="cb1-126"><a href="#cb1-126"></a>    assert eval_at(dot(X, delta(C2)), pt) == pytest.approx(0)</span>
+<span id="cb1-116"><a href="#cb1-116"></a>## file: test_symbolic.py</span>
+<span id="cb1-117"><a href="#cb1-117"></a>import pytest</span>
+<span id="cb1-118"><a href="#cb1-118"></a>import sympy as sp</span>
+<span id="cb1-119"><a href="#cb1-119"></a></span>
+<span id="cb1-120"><a href="#cb1-120"></a>from symbolic import delta, dot, X_full, derived_C, to_function, eval_at</span>
+<span id="cb1-121"><a href="#cb1-121"></a></span>
+<span id="cb1-122"><a href="#cb1-122"></a></span>
+<span id="cb1-123"><a href="#cb1-123"></a>def test_conservation():</span>
+<span id="cb1-124"><a href="#cb1-124"></a>    H = sp.sympify("(px^2 + py^2 + pz^2)/2 + (x^2 + y^2 + z^2)/2")</span>
+<span id="cb1-125"><a href="#cb1-125"></a>    C1 = sp.sympify("x^2 + y^2 + z^2 - 1")</span>
+<span id="cb1-126"><a href="#cb1-126"></a>    C2 = derived_C(H, C1)</span>
 <span id="cb1-127"><a href="#cb1-127"></a></span>
-<span id="cb1-128"><a href="#cb1-128"></a></span>
-<span id="cb1-129"><a href="#cb1-129"></a>def test_to_fun():</span>
-<span id="cb1-130"><a href="#cb1-130"></a>    H = sp.sympify("(px^2 + py^2 + pz^2)/2 + (x^2 + y^2 + z^2)/2")</span>
-<span id="cb1-131"><a href="#cb1-131"></a>    C1 = sp.sympify("x^2 + y^2 + z^2 - 1")</span>
-<span id="cb1-132"><a href="#cb1-132"></a>    C2 = derived_C(H, C1)</span>
-<span id="cb1-133"><a href="#cb1-133"></a></span>
-<span id="cb1-134"><a href="#cb1-134"></a>    X = X_full(H, C1, C2)</span>
-<span id="cb1-135"><a href="#cb1-135"></a>    X_fun = to_function(X)</span>
-<span id="cb1-136"><a href="#cb1-136"></a></span>
-<span id="cb1-137"><a href="#cb1-137"></a>    pt = (0, 2**0.5/2, 2**0.5/2, 5, -3, 3)</span>
-<span id="cb1-138"><a href="#cb1-138"></a>    assert X_fun(pt) == pytest.approx(</span>
-<span id="cb1-139"><a href="#cb1-139"></a>        [5.0, -3.0, 3.0, 0.0, -30.40559, -30.40559])</span>
+<span id="cb1-128"><a href="#cb1-128"></a>    X = X_full(H, C1, C2)</span>
+<span id="cb1-129"><a href="#cb1-129"></a></span>
+<span id="cb1-130"><a href="#cb1-130"></a>    assert sp.simplify(dot(X, delta(H))) == 0</span>
+<span id="cb1-131"><a href="#cb1-131"></a>    assert sp.simplify(dot(X, delta(C1))) == 0</span>
+<span id="cb1-132"><a href="#cb1-132"></a></span>
+<span id="cb1-133"><a href="#cb1-133"></a>    # Checking the conservation of C2 requires using the constraints</span>
+<span id="cb1-134"><a href="#cb1-134"></a>    # themselves. I don't know how to do that, so we fall back on just</span>
+<span id="cb1-135"><a href="#cb1-135"></a>    # substituting a point on the constraint surface and verifying that we get</span>
+<span id="cb1-136"><a href="#cb1-136"></a>    # 0.</span>
+<span id="cb1-137"><a href="#cb1-137"></a>    pt = (0, sp.sqrt(2)/2, sp.sqrt(2)/2, 5, -3, 3)</span>
+<span id="cb1-138"><a href="#cb1-138"></a>    assert eval_at(dot(X, delta(C2)), pt) == pytest.approx(0)</span>
+<span id="cb1-139"><a href="#cb1-139"></a></span>
 <span id="cb1-140"><a href="#cb1-140"></a></span>
-<span id="cb1-141"><a href="#cb1-141"></a></span>
-<span id="cb1-142"><a href="#cb1-142"></a>## file: symbolic.py</span>
-<span id="cb1-143"><a href="#cb1-143"></a>"""Symbolic computations with functions of (q, p)."""</span>
-<span id="cb1-144"><a href="#cb1-144"></a></span>
-<span id="cb1-145"><a href="#cb1-145"></a>import sympy as sp</span>
-<span id="cb1-146"><a href="#cb1-146"></a></span>
-<span id="cb1-147"><a href="#cb1-147"></a>q = x, y, z = sp.symbols("x, y, z")</span>
-<span id="cb1-148"><a href="#cb1-148"></a>p = px, py, pz = sp.symbols("px, py, pz")</span>
-<span id="cb1-149"><a href="#cb1-149"></a></span>
-<span id="cb1-150"><a href="#cb1-150"></a></span>
-<span id="cb1-151"><a href="#cb1-151"></a># Primitives</span>
+<span id="cb1-141"><a href="#cb1-141"></a>def test_to_fun():</span>
+<span id="cb1-142"><a href="#cb1-142"></a>    H = sp.sympify("(px^2 + py^2 + pz^2)/2 + (x^2 + y^2 + z^2)/2")</span>
+<span id="cb1-143"><a href="#cb1-143"></a>    C1 = sp.sympify("x^2 + y^2 + z^2 - 1")</span>
+<span id="cb1-144"><a href="#cb1-144"></a>    C2 = derived_C(H, C1)</span>
+<span id="cb1-145"><a href="#cb1-145"></a></span>
+<span id="cb1-146"><a href="#cb1-146"></a>    X = X_full(H, C1, C2)</span>
+<span id="cb1-147"><a href="#cb1-147"></a>    X_fun = to_function(X)</span>
+<span id="cb1-148"><a href="#cb1-148"></a></span>
+<span id="cb1-149"><a href="#cb1-149"></a>    pt = (0, 2**0.5/2, 2**0.5/2, 5, -3, 3)</span>
+<span id="cb1-150"><a href="#cb1-150"></a>    assert X_fun(pt) == pytest.approx(</span>
+<span id="cb1-151"><a href="#cb1-151"></a>        [5.0, -3.0, 3.0, 0.0, -30.40559, -30.40559])</span>
 <span id="cb1-152"><a href="#cb1-152"></a></span>
-<span id="cb1-153"><a href="#cb1-153"></a>def delta_q(f):</span>
-<span id="cb1-154"><a href="#cb1-154"></a>    return [sp.diff(f, v) for v in q]</span>
-<span id="cb1-155"><a href="#cb1-155"></a></span>
+<span id="cb1-153"><a href="#cb1-153"></a></span>
+<span id="cb1-154"><a href="#cb1-154"></a>## file: symbolic.py</span>
+<span id="cb1-155"><a href="#cb1-155"></a>"""Symbolic computations with functions of (q, p)."""</span>
 <span id="cb1-156"><a href="#cb1-156"></a></span>
-<span id="cb1-157"><a href="#cb1-157"></a>def delta_p(f):</span>
-<span id="cb1-158"><a href="#cb1-158"></a>    return [sp.diff(f, v) for v in p]</span>
-<span id="cb1-159"><a href="#cb1-159"></a></span>
-<span id="cb1-160"><a href="#cb1-160"></a></span>
-<span id="cb1-161"><a href="#cb1-161"></a>def delta(f):</span>
-<span id="cb1-162"><a href="#cb1-162"></a>    return delta_q(f) + delta_p(f)</span>
-<span id="cb1-163"><a href="#cb1-163"></a></span>
+<span id="cb1-157"><a href="#cb1-157"></a>import sympy as sp</span>
+<span id="cb1-158"><a href="#cb1-158"></a></span>
+<span id="cb1-159"><a href="#cb1-159"></a>q = x, y, z = sp.symbols("x, y, z")</span>
+<span id="cb1-160"><a href="#cb1-160"></a>p = px, py, pz = sp.symbols("px, py, pz")</span>
+<span id="cb1-161"><a href="#cb1-161"></a></span>
+<span id="cb1-162"><a href="#cb1-162"></a></span>
+<span id="cb1-163"><a href="#cb1-163"></a># Primitives</span>
 <span id="cb1-164"><a href="#cb1-164"></a></span>
-<span id="cb1-165"><a href="#cb1-165"></a>def dot(v1, v2):</span>
-<span id="cb1-166"><a href="#cb1-166"></a>    return sum(v*w for (v, w) in zip(v1, v2))</span>
+<span id="cb1-165"><a href="#cb1-165"></a>def delta_q(f):</span>
+<span id="cb1-166"><a href="#cb1-166"></a>    return [sp.diff(f, v) for v in q]</span>
 <span id="cb1-167"><a href="#cb1-167"></a></span>
 <span id="cb1-168"><a href="#cb1-168"></a></span>
-<span id="cb1-169"><a href="#cb1-169"></a>def plus(v1, v2):</span>
-<span id="cb1-170"><a href="#cb1-170"></a>    return [v+w for (v, w) in zip(v1, v2)]</span>
+<span id="cb1-169"><a href="#cb1-169"></a>def delta_p(f):</span>
+<span id="cb1-170"><a href="#cb1-170"></a>    return [sp.diff(f, v) for v in p]</span>
 <span id="cb1-171"><a href="#cb1-171"></a></span>
 <span id="cb1-172"><a href="#cb1-172"></a></span>
-<span id="cb1-173"><a href="#cb1-173"></a>def minus(v1, v2):</span>
-<span id="cb1-174"><a href="#cb1-174"></a>    return [v-w for (v, w) in zip(v1, v2)]</span>
+<span id="cb1-173"><a href="#cb1-173"></a>def delta(f):</span>
+<span id="cb1-174"><a href="#cb1-174"></a>    return delta_q(f) + delta_p(f)</span>
 <span id="cb1-175"><a href="#cb1-175"></a></span>
 <span id="cb1-176"><a href="#cb1-176"></a></span>
-<span id="cb1-177"><a href="#cb1-177"></a>def times_scalar(X, ell):</span>
-<span id="cb1-178"><a href="#cb1-178"></a>    return [v*ell for v in X]</span>
+<span id="cb1-177"><a href="#cb1-177"></a>def dot(v1, v2):</span>
+<span id="cb1-178"><a href="#cb1-178"></a>    return sum(v*w for (v, w) in zip(v1, v2))</span>
 <span id="cb1-179"><a href="#cb1-179"></a></span>
 <span id="cb1-180"><a href="#cb1-180"></a></span>
-<span id="cb1-181"><a href="#cb1-181"></a>def poisson(f1, f2):</span>
-<span id="cb1-182"><a href="#cb1-182"></a>    return dot(delta_q(f1), delta_p(f2)) - dot(delta_q(f2), delta_p(f1))</span>
+<span id="cb1-181"><a href="#cb1-181"></a>def plus(v1, v2):</span>
+<span id="cb1-182"><a href="#cb1-182"></a>    return [v+w for (v, w) in zip(v1, v2)]</span>
 <span id="cb1-183"><a href="#cb1-183"></a></span>
 <span id="cb1-184"><a href="#cb1-184"></a></span>
-<span id="cb1-185"><a href="#cb1-185"></a># Mechanics</span>
-<span id="cb1-186"><a href="#cb1-186"></a></span>
-<span id="cb1-187"><a href="#cb1-187"></a>def derived_C(H, C1):</span>
-<span id="cb1-188"><a href="#cb1-188"></a>    C2 = dot(delta_q(C1), delta_p(H))</span>
-<span id="cb1-189"><a href="#cb1-189"></a>    return C2</span>
-<span id="cb1-190"><a href="#cb1-190"></a></span>
+<span id="cb1-185"><a href="#cb1-185"></a>def minus(v1, v2):</span>
+<span id="cb1-186"><a href="#cb1-186"></a>    return [v-w for (v, w) in zip(v1, v2)]</span>
+<span id="cb1-187"><a href="#cb1-187"></a></span>
+<span id="cb1-188"><a href="#cb1-188"></a></span>
+<span id="cb1-189"><a href="#cb1-189"></a>def times_scalar(X, ell):</span>
+<span id="cb1-190"><a href="#cb1-190"></a>    return [v*ell for v in X]</span>
 <span id="cb1-191"><a href="#cb1-191"></a></span>
-<span id="cb1-192"><a href="#cb1-192"></a>def X(f):</span>
-<span id="cb1-193"><a href="#cb1-193"></a>    X_q = [poisson(v, f) for v in q]</span>
-<span id="cb1-194"><a href="#cb1-194"></a>    X_p = [poisson(v, f) for v in p]</span>
-<span id="cb1-195"><a href="#cb1-195"></a>    return X_q + X_p</span>
+<span id="cb1-192"><a href="#cb1-192"></a></span>
+<span id="cb1-193"><a href="#cb1-193"></a>def poisson(f1, f2):</span>
+<span id="cb1-194"><a href="#cb1-194"></a>    return dot(delta_q(f1), delta_p(f2)) - dot(delta_q(f2), delta_p(f1))</span>
+<span id="cb1-195"><a href="#cb1-195"></a></span>
 <span id="cb1-196"><a href="#cb1-196"></a></span>
-<span id="cb1-197"><a href="#cb1-197"></a></span>
-<span id="cb1-198"><a href="#cb1-198"></a>def X_constraint(H, C1, C2):</span>
-<span id="cb1-199"><a href="#cb1-199"></a>    C12 = 1/poisson(C1, C2)</span>
-<span id="cb1-200"><a href="#cb1-200"></a>    H_C1 = poisson(H, C1)</span>
-<span id="cb1-201"><a href="#cb1-201"></a>    H_C2 = poisson(H, C2)</span>
+<span id="cb1-197"><a href="#cb1-197"></a># Mechanics</span>
+<span id="cb1-198"><a href="#cb1-198"></a></span>
+<span id="cb1-199"><a href="#cb1-199"></a>def derived_C(H, C1):</span>
+<span id="cb1-200"><a href="#cb1-200"></a>    C2 = dot(delta_q(C1), delta_p(H))</span>
+<span id="cb1-201"><a href="#cb1-201"></a>    return C2</span>
 <span id="cb1-202"><a href="#cb1-202"></a></span>
-<span id="cb1-203"><a href="#cb1-203"></a>    X_q = [-C12 * (-H_C1 * poisson(v, C2) + H_C2 * poisson(v, C1)) for v in q]</span>
-<span id="cb1-204"><a href="#cb1-204"></a>    X_p = [-C12 * (-H_C1 * poisson(v, C2) + H_C2 * poisson(v, C1)) for v in p]</span>
-<span id="cb1-205"><a href="#cb1-205"></a>    return X_q + X_p</span>
-<span id="cb1-206"><a href="#cb1-206"></a></span>
-<span id="cb1-207"><a href="#cb1-207"></a></span>
-<span id="cb1-208"><a href="#cb1-208"></a>def X_feedback(H, C1, C2, k1, k2, k3, q0, p0):</span>
-<span id="cb1-209"><a href="#cb1-209"></a>    delta_H = H - eval_at(H, q0 + p0)</span>
-<span id="cb1-210"><a href="#cb1-210"></a>    delta_C1 = C1 - eval_at(C1, q0 + p0)</span>
-<span id="cb1-211"><a href="#cb1-211"></a>    delta_C2 = C2 - eval_at(C2, q0 + p0)</span>
-<span id="cb1-212"><a href="#cb1-212"></a></span>
-<span id="cb1-213"><a href="#cb1-213"></a>    return plus(</span>
-<span id="cb1-214"><a href="#cb1-214"></a>        times_scalar(delta(H), k1*delta_H),</span>
-<span id="cb1-215"><a href="#cb1-215"></a>        plus(</span>
-<span id="cb1-216"><a href="#cb1-216"></a>            times_scalar(delta(C1), k2*delta_C1),</span>
-<span id="cb1-217"><a href="#cb1-217"></a>            times_scalar(delta(C2), k3*delta_C2)))</span>
+<span id="cb1-203"><a href="#cb1-203"></a></span>
+<span id="cb1-204"><a href="#cb1-204"></a>def X(f):</span>
+<span id="cb1-205"><a href="#cb1-205"></a>    X_q = [poisson(v, f) for v in q]</span>
+<span id="cb1-206"><a href="#cb1-206"></a>    X_p = [poisson(v, f) for v in p]</span>
+<span id="cb1-207"><a href="#cb1-207"></a>    return X_q + X_p</span>
+<span id="cb1-208"><a href="#cb1-208"></a></span>
+<span id="cb1-209"><a href="#cb1-209"></a></span>
+<span id="cb1-210"><a href="#cb1-210"></a>def X_constraint(H, C1, C2):</span>
+<span id="cb1-211"><a href="#cb1-211"></a>    C12 = 1/poisson(C1, C2)</span>
+<span id="cb1-212"><a href="#cb1-212"></a>    H_C1 = poisson(H, C1)</span>
+<span id="cb1-213"><a href="#cb1-213"></a>    H_C2 = poisson(H, C2)</span>
+<span id="cb1-214"><a href="#cb1-214"></a></span>
+<span id="cb1-215"><a href="#cb1-215"></a>    X_q = [-C12 * (-H_C1 * poisson(v, C2) + H_C2 * poisson(v, C1)) for v in q]</span>
+<span id="cb1-216"><a href="#cb1-216"></a>    X_p = [-C12 * (-H_C1 * poisson(v, C2) + H_C2 * poisson(v, C1)) for v in p]</span>
+<span id="cb1-217"><a href="#cb1-217"></a>    return X_q + X_p</span>
 <span id="cb1-218"><a href="#cb1-218"></a></span>
 <span id="cb1-219"><a href="#cb1-219"></a></span>
-<span id="cb1-220"><a href="#cb1-220"></a>def X_full(H, C1, C2):</span>
-<span id="cb1-221"><a href="#cb1-221"></a>    X_h = X(H)</span>
-<span id="cb1-222"><a href="#cb1-222"></a>    X_c = X_constraint(H, C1, C2)</span>
-<span id="cb1-223"><a href="#cb1-223"></a>    return plus(X_h, X_c)</span>
+<span id="cb1-220"><a href="#cb1-220"></a>def X_feedback(H, C1, C2, k1, k2, k3, q0, p0):</span>
+<span id="cb1-221"><a href="#cb1-221"></a>    delta_H = H - eval_at(H, q0 + p0)</span>
+<span id="cb1-222"><a href="#cb1-222"></a>    delta_C1 = C1 - eval_at(C1, q0 + p0)</span>
+<span id="cb1-223"><a href="#cb1-223"></a>    delta_C2 = C2 - eval_at(C2, q0 + p0)</span>
 <span id="cb1-224"><a href="#cb1-224"></a></span>
-<span id="cb1-225"><a href="#cb1-225"></a></span>
-<span id="cb1-226"><a href="#cb1-226"></a>def X_full_feedback(H, C1, C2, k1, k2, k3, q0, p0):</span>
-<span id="cb1-227"><a href="#cb1-227"></a>    X_fu = X_full(H, C1, C2)</span>
-<span id="cb1-228"><a href="#cb1-228"></a>    X_fe = X_feedback(H, C1, C2, k1, k2, k3, q0, p0)</span>
-<span id="cb1-229"><a href="#cb1-229"></a>    return minus(X_fu, X_fe)</span>
+<span id="cb1-225"><a href="#cb1-225"></a>    return plus(</span>
+<span id="cb1-226"><a href="#cb1-226"></a>        times_scalar(delta(H), k1*delta_H),</span>
+<span id="cb1-227"><a href="#cb1-227"></a>        plus(</span>
+<span id="cb1-228"><a href="#cb1-228"></a>            times_scalar(delta(C1), k2*delta_C1),</span>
+<span id="cb1-229"><a href="#cb1-229"></a>            times_scalar(delta(C2), k3*delta_C2)))</span>
 <span id="cb1-230"><a href="#cb1-230"></a></span>
 <span id="cb1-231"><a href="#cb1-231"></a></span>
-<span id="cb1-232"><a href="#cb1-232"></a># Utilities</span>
-<span id="cb1-233"><a href="#cb1-233"></a></span>
-<span id="cb1-234"><a href="#cb1-234"></a>def to_function(X):</span>
-<span id="cb1-235"><a href="#cb1-235"></a>    callables = [sp.lambdify([q + p], sp.simplify(v)) for v in X]</span>
+<span id="cb1-232"><a href="#cb1-232"></a>def X_full(H, C1, C2):</span>
+<span id="cb1-233"><a href="#cb1-233"></a>    X_h = X(H)</span>
+<span id="cb1-234"><a href="#cb1-234"></a>    X_c = X_constraint(H, C1, C2)</span>
+<span id="cb1-235"><a href="#cb1-235"></a>    return plus(X_h, X_c)</span>
 <span id="cb1-236"><a href="#cb1-236"></a></span>
-<span id="cb1-237"><a href="#cb1-237"></a>    def fun(args):</span>
-<span id="cb1-238"><a href="#cb1-238"></a>        return [c(args) for c in callables]</span>
-<span id="cb1-239"><a href="#cb1-239"></a></span>
-<span id="cb1-240"><a href="#cb1-240"></a>    return fun</span>
-<span id="cb1-241"><a href="#cb1-241"></a></span>
+<span id="cb1-237"><a href="#cb1-237"></a></span>
+<span id="cb1-238"><a href="#cb1-238"></a>def X_full_feedback(H, C1, C2, k1, k2, k3, q0, p0):</span>
+<span id="cb1-239"><a href="#cb1-239"></a>    X_fu = X_full(H, C1, C2)</span>
+<span id="cb1-240"><a href="#cb1-240"></a>    X_fe = X_feedback(H, C1, C2, k1, k2, k3, q0, p0)</span>
+<span id="cb1-241"><a href="#cb1-241"></a>    return minus(X_fu, X_fe)</span>
 <span id="cb1-242"><a href="#cb1-242"></a></span>
-<span id="cb1-243"><a href="#cb1-243"></a>def eval_at(expr, args):</span>
-<span id="cb1-244"><a href="#cb1-244"></a>    subs = dict(zip(q + p, args))</span>
-<span id="cb1-245"><a href="#cb1-245"></a>    return expr.evalf(subs=subs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-243"><a href="#cb1-243"></a></span>
+<span id="cb1-244"><a href="#cb1-244"></a># Utilities</span>
+<span id="cb1-245"><a href="#cb1-245"></a></span>
+<span id="cb1-246"><a href="#cb1-246"></a>def to_function(X):</span>
+<span id="cb1-247"><a href="#cb1-247"></a>    callables = [sp.lambdify([q + p], v) for v in X]</span>
+<span id="cb1-248"><a href="#cb1-248"></a></span>
+<span id="cb1-249"><a href="#cb1-249"></a>    def fun(args):</span>
+<span id="cb1-250"><a href="#cb1-250"></a>        return [c(args) for c in callables]</span>
+<span id="cb1-251"><a href="#cb1-251"></a></span>
+<span id="cb1-252"><a href="#cb1-252"></a>    return fun</span>
+<span id="cb1-253"><a href="#cb1-253"></a></span>
+<span id="cb1-254"><a href="#cb1-254"></a></span>
+<span id="cb1-255"><a href="#cb1-255"></a>def eval_at(expr, args):</span>
+<span id="cb1-256"><a href="#cb1-256"></a>    subs = dict(zip(q + p, args))</span>
+<span id="cb1-257"><a href="#cb1-257"></a>    return expr.evalf(subs=subs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank you</h2>
@@ -799,7 +815,6 @@ Joris Vankerschaver
 <ol type="1">
 <li>Apply feedback integrators in situations where near-preservation is good enough (e.g.&nbsp;neural networks with Stiefel weights)</li>
 </ol>
-
 <div class="footer footer-default">
 
 </div>
@@ -808,19 +823,19 @@ Joris Vankerschaver
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="2023-iciam-jvkersch_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
